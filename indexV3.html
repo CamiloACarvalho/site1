@@ -1,0 +1,99 @@
+<!-- UM ATALHO PARA INICIAR A ESTRUTURA BÁSICA DO HTML É "!+ENTER" -->
+
+<!DOCTYPE html>   <!-- ISSO INFORMA O TIPO DE ARQUIVO, NESTE CASO É "TIPO DE ARQUIVO HTML" -->
+
+<html lang="pt-BR">   <!-- ORIGINALMENTE É "LANG="EN"", QUE QUER DIZER A LINGUAGEM QUE VAMOS ESCREVER ESTÁ EM INGLÊS, MAS FOI ALTERADA PARA PORTUGUÊS -->
+
+
+<head>  <!-- O HTML É DIVIDIDO EM DUAS PARTES HEAD E BODY. HEAD É A PARTE PRINCIPAL, É ONDE GUARDAMOS OS METADADOS E QUE NÃO VÃO SER EXIBIDAS PARA O USUÁRIO. E O BODY É ONDE VAMOS ESCREVER TODOS OS DADOS, TÍTULO, IMAGENS, FORMULÁRIOS...-->
+
+    <meta charset="UTF-8">  <!-- ESSE É O PRIMEIRO METADADO. É UMA FORMA DE INDICAR OS CHARACTER QUE VAMOS USAR. VAMOS DEIXAR DE FORMA PADRÃO "UTF-8"-->
+
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">  PARA A CRIAÇÃO DESTA LANDING PAGE, TERÍAMOS QUE APAGAR ESSE METADADO, MAS PARA NÃO PERDER ESSA INFORMAÇÃO, TORENI ELE UM COMENTÁRIO-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- ESSE METADADO INDICA QUE VAMOS PODER ADAPTAR O NOSSO CÓGIDO A OUTROS DISPOSITIVOS, COMO CELULARES, POR EXEMPLO. MANTEVE O CÓDIGO -->
+
+    <title>Camilo Carvalho - Portifólio</title> <!-- É O TÍTULO DA MINHA PÁGINA, PORÉM NÃO É O TÍTULO QUE OS USÁRIOS IRÃO VER DENTRO DA PÁGINA. ESSE TÍTULO REFERE-SE AO TÍTULO QUE FICARÁ ESCRITO NA ABA DA JANELA DO NAVEGADOR-->
+
+    <meta name="description" content="Esse portifólio tem o intuíto de compartilhar meus projetos de programação como desenvolvedor júnior" >  <!-- ESSE METADADO FOI CRIADO PARA DEIXAR A DESCRIÇÃO ABAIXO DE LINK -->
+
+    <link rel="stylesheet" type="text/css" href="StyleV3.css"> <!-- FOI PRECISO CRIAR ESSE LINK PARA UNIR A PROGRAMAÇÃO HTML E O LAYOUT DA PÁGINA EM CSS -->
+
+</head>
+
+<body>
+
+    <!-- PRIMEIRO PASSO É DIVIDIR A PÁGINA É 3 GRANDE GRUPOS, PRIMEIRO É HEADER - CABEÇALHO, SEGUNDO É MAIN - PRINCIPAL E POR FIM, NÃO MENOS IMPORTANTE O FOOTER - RODAPÉ -->
+    
+    <header class= "cabecalho"> <!-- CABEÇALHO -->
+        
+        <!-- CONSEGUIMOS DIVIR O CABEÇALHO EM DOIS GRANDES GRUPOS. O PRIMEIRO É UMA IMAGEM DO LADO DIREITO E O SEGUNDO GRUPO SÃO OS MENUS DE ACESSOS DO LADO ESQUERDO DO CABEÇALHO -->
+        
+        <img class="cabecalho-imagem" src="LOGO.svg" alt="Imagem do perfil"> <!-- TAG PARA ADICIONAR IMAGENS. EXISTE UMA PROPRIEDADE QUE CHAMA SRC, QUE SOURCE - FONTE. SE A IMAGEM ESTIVESSE DENTRO DE OUTRO REPOSITÓRIO, TERÍAMOS QUE COLOCAR PASTA/NOME DA PASTA. CASO DÊ ERRO AO CARREGAR A IMAGEM, TEM UMA OUTRA PROPRIEDADE INTERESSANTE QUE CHAMA ALT, QUE SERÁ O ESCRITO QUE APARECERÁ NA IMAGEM CASO A IMAGEM NÃO CARREGUE, OU DÊ ALGUM ERRO.-->
+
+        <nav class="cabecalho-menu"> <!-- TAG PARA NAVEGAÇÃO. DENTRO DE NAV TEREMOS 4 BOTÕES (NA VERDADE SÃO LINKS, ÂNCORAS QUE PODEREMOS CLICAR) PARA NAVEGAÇÃO -->
+            
+            <a class="cabecalho-menu-item" href="mailto:camilo.carvalho@engenharia.ufjf.br"> <strong> G-Mail </strong></a> <!-- LINK PARA ACESSAR ENVIAR E-MAIL. -->
+
+            <a class="cabecalho-menu-item" href="https://www.linkedin.com/in/camiloaugustocarvalho/"> <strong> LinkedIn</strong></a> <!-- NA PARTE href REFERE-SE AO SITE QUE SERÁ ACESSADO -->
+
+            <a class="cabecalho-menu-item" href="https://github.com/CamiloACarvalho"> <strong> GitHub </strong></a> <!-- A FUNÇÃO img É O "BOTÃO" PERSONALIZADO DE CADA SITE. RETIREI DO SITE: https://dev.to/envoy_/150-badges-for-github-pnk -->
+
+            <a class="cabecalho-menu-item" href="https://www.instagram.com/camilocarv_/"> <strong> Instagram </strong></a>  <!-- PODE-SE OBSERVAR TAMBÉM QUE FOI CRIADO UMA CLASSE. ESSA CLASSE É PARA PODER CONFIGURAR O LAYOUT DA PÁGINA NA LINGUAGEM CSS -->
+
+            <a class="cabecalho-menu-item" href="https://www.facebook.com/camiloaugusto.carvalho"> <strong> Facebook </strong></a>
+            
+            <a class="cabecalho-menu-item" href="https://www.youtube.com/channel/UCwu_OmIM8rZqs2IKi2oJ5ow"> <strong> YouTube </strong></a>
+        
+        </nav>
+
+    </header>
+
+    <main class="conteudo"> <!-- PRINCIPAL --> <!-- OBSERVA-SE QUE ESTOU CRIANDO VÁRIAS CLASSES. ESSAS CLASSES ESTÃO SENDO CRIADAS PARA PODER PROGRAMAR EM CSS. -->
+
+        <section class="conteudo-principal">  <!-- VAMOS DIVIDIR A TELA PREINCIPAL EM DUAS PARTES (PROJETO INICIAL) TALVEZ EU CRIE MAIS SEÇÕES PRA CRIAR MEU PORTIFÓLIO. PARA CRIAR ESSAS DIVISÕES FOI USADO A FUNÇÃO <section>  -->
+
+            <div class="conteudo-principal-escrito"> <!-- ISSO SERIA DIVISÃO -->
+
+                <!-- NA LINGUAGEM HTML USA-SE H1, H2,..., H6 PARA TÍTULOS E SUBTÍTULOS. O H1 É USADO APENAS 1 POR PÁGINA -->
+                <h1 class="conteudo-principal-escrito-titulo"> Camilo Augusto Carvalho </h1> <!-- TÍTULO PRINCIPAL DA PÁGINA -->
+
+                <h3 class="conteudo-principal-escrito-subtitulo"> Desenvolvedor jr. | Analista | Engenheiro mecânico | Engenheiro de Software </h3> <!-- SUBTÍTULO -->
+
+            </div>
+
+            <img class="conteudo-principal-imagem" src="AvatarMaker2.png" alt="Imagem do avatar"> <!-- CRIEI MEU AVATAR NO SITE https://avatarmaker.com/male/ . SALVEI NO FORMATO SVG E SALVEI NA PASTA QUE ESTOU CRIANDO ESSE PROGRMA -->
+
+        </section>
+
+        <section class="conteudo-secundario">
+
+            
+
+            <h3 class="conteudo-secundario-titulo"> <strong> RESUMO PROFISSIONAL: </strong> </h3> <!-- H1 FONTE MAIOR, H6 FONTE MENOR -->
+             <p class="conteudo-secundario-paragrafo"> •	Graduado em Engenharia Mecânica pela Universidade Federal de Juiz de Fora; </p>
+             <p class="conteudo-secundario-paragrafo"> •	Pós-graduação em Engenharia de Software pela Ampli; </p> <!-- <p> É DE PARÁGRAFO, PARA ESCREVER DE TEXTO. PORÉM QUANDO FECHA </p> SALTA UMA LINHA -->
+             <p class="conteudo-secundario-paragrafo"> •	Conhecimento em bancos de dados, linguagem HTML, CSS, C++, Java, JavaScript, Python e M-código;</p>
+             <p class="conteudo-secundario-paragrafo"> •	Conhecimentos em SAP, PCP, MRP, PCE e PCM; </p> <!-- PARA COLOCAR EM NEGRITO, BASTA ESCREVER <strong> trecho </strong> -->
+             <p class="conteudo-secundario-paragrafo"> •	Atuando como analista técnico, sou responsável pelo planejamento de manutenção, indicadores, gestão da equipe de manutenção, organização da oficina, abertura de OS, acompanhamento do reparo do equipamento, tratativa com cliente, fechamento de OS, laudo de peritagem, controle de qualidade e recebimento de insumos para reparo dos equipamentos; </p>
+             <p class="conteudo-secundario-paragrafo"> •	Como analista de PCP, era responsável pela elaboração do plano mestre de produção, programação/sequenciamento de produção e gestão da necessidade de materiais;</p>
+             <p class="conteudo-secundario-paragrafo"> •	Como encarregado de produção elaborava indicadores, coordenava e orientava uma pequena equipe com 5 colaboradores. Mantinha organizado e controlava o estoque do setor, delegava tarefas, avaliava o desempenho dos colaboradores buscando sempre aumentar a produtividade.</p>
+
+            <a class="conteudo-secundario-link" href= "https://1drv.ms/b/s!ArXBbqvD2_RZq0KkTz8puMpSHpdm?e=Mo5g5g" download="CamiloAugustoCarvalho_.pdf"> <strong> Download (curriculo) </strong> </a> <!-- LINK PARA DOWNLOADO DO MEU CURRICULO HEHEHE-->
+           
+
+        </section>
+
+    </main>
+
+    <footer class="rodape"> <!-- RODAPÉ -->
+
+        <iframe class="rodape-gif" src="https://giphy.com/embed/l4pTjOu0NsrLApt0Q" width="400" height="280" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ending-looney-tunes-the-end-l4pTjOu0NsrLApt0Q"></a></p> <!-- GIF RETIRADO DO SITE https://giphy.com/ NESSE SITE TEM A OPÇÃO DE VC COPIAR O LINK COM O CÓDIGO EM HTML -->
+
+        <a><p class="rodape-ref"> via GIPHY </p></a>
+
+    </footer>
+
+</body>
+
+</html>
